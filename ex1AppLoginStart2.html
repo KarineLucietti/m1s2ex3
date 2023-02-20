@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[M1S02] Ex 3 - Salvar login no LocalStorage [App LoginStart]</title>
+</head>
+<body>
+    <button type="submit" id="login-btn" onclick="logout()">Sair</button>
+</body>
+</html>
+<script src="./ex1SalvarLoginNoLocalStorage.js"></script>
+<script>
+    window.onload = function checkLocalStorage() {
+        if (localStorage.getItem("user") == null) {
+            location.href = "ex1AppLoginStart.html";
+        }
+    }
+</script>
+</html>
